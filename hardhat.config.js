@@ -1,6 +1,7 @@
 require('@nomiclabs/hardhat-ethers')
 require('@nomiclabs/hardhat-waffle')
 require('hardhat-deploy')
+require('@eth-optimism/plugins/hardhat/compiler')
 
 module.exports = {
   networks: {
@@ -8,6 +9,13 @@ module.exports = {
       accounts: {
         mnemonic: 'test test test test test test test test test test test junk'
       }
+    },
+    optimism: {
+      url: 'http://127.0.0.1:8545',
+      accounts: {
+        mnemonic: 'test test test test test test test test test test test junk'
+      },
+      ovm: true
     }
   },
   solidity: '0.7.6',

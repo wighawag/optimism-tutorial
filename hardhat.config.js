@@ -1,10 +1,18 @@
 require('@nomiclabs/hardhat-ethers')
 require('@nomiclabs/hardhat-waffle')
 require('hardhat-deploy')
+require('@eth-optimism/plugins/hardhat/compiler')
 
 module.exports = {
   networks: {
     hardhat: {
+      accounts: {
+        mnemonic: 'test test test test test test test test test test test junk'
+      }
+    },
+    // Add this network to your config!
+    optimism: {
+      url: 'http://127.0.0.1:8545',
       accounts: {
         mnemonic: 'test test test test test test test test test test test junk'
       }

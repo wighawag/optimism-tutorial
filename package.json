@@ -4,7 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf ./cache-ovm ./cache ./artifacts-ovm ./artifacts ./deployments"
+    "clean": "rimraf ./cache-ovm ./cache ./artifacts-ovm ./artifacts ./deployments",
+    "compile": "hardhat compile",
+    "ovm:compile": "cross-env TARGET=ovm hardhat compile",
+    "test": "hardhat test",
+    "ovm:test": "cross-env TARGET=ovm hardhat --network optimism test",
+    "void:deploy": "hardhat deploy",
+    "ovm:deploy": "cross-env TARGET=ovm hardhat --network optimism deploy"
   },
   "devDependencies": {
     "@eth-optimism/dev": "^1.1.1",
@@ -12,6 +18,7 @@
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.2.0",
+    "cross-env": "^7.0.3",
     "ethereum-waffle": "^3.2.1",
     "ethers": "^5.0.24",
     "hardhat": "^2.0.7",

@@ -11,5 +11,5 @@ const func = async (hre) => {
   })
 }
 
-func.tags = ['MyERC20']
+func.tags = ['MyL2DepositedERC20', 'MyL2DepositedERC20_deploy']
 module.exports = func

@@ -18,7 +18,10 @@ module.exports = {
         mnemonic: 'test test test test test test test test test test test junk'
       },
       deploy: ["deploy_l2"],
-      ovm: true
+      ovm: true,
+      companionNetworks: {
+        'l1': 'localhost'
+      }
     },
     localhost: {
       url: 'http://127.0.0.1:9545',

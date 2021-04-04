@@ -12,6 +12,7 @@
     "@eth-optimism/contracts": "^0.1.11",
     "@eth-optimism/dev": "^1.1.1",
     "@eth-optimism/plugins": "^1.0.0-alpha.2",
+    "@eth-optimism/watcher": "^0.0.1-alpha.9",
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.2.0",
@@ -19,7 +20,7 @@
     "ethereum-waffle": "^3.2.1",
     "ethers": "^5.0.24",
     "hardhat": "^2.0.7",
-    "hardhat-deploy": "^0.7.0-beta.58",
+    "hardhat-deploy": "^0.8.0-next.0",
     "mocha": "^8.2.1"
   }
 }

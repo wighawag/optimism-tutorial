@@ -1,3 +1,19 @@
+```
+yarn hardhat --network localhost deploy
+yarn hardhat --network optimism deploy
+yarn hardhat --network localhost deploy
+yarn hardhat --network optimism deploy
+yarn localhost:run .\scripts\l1_setup_user.js // give user some ETH and a token
+yarn localhost:run .\scripts\getBalances.js
+yarn localhost:run .\scripts\l1_deposit.js //  user deposit on bridge
+yarn localhost:run .\scripts\watch_from_l1.js <hash from previous command>
+yarn localhost:run .\scripts\getBalances.js
+yarn optimism:run .\scripts\l2_withdraw.js // user withdraw from l2
+yarn optimism:run .\scripts\watch_from_l2.js <hash from previous command>
+yarn localhost:run .\scripts\getBalances.js
+```
+
+
 # The Official™ Optimism Tutorial
 
 This tutorial is an introduction to the process of developing applications on Optimistic Ethereum.
@@ -216,7 +232,7 @@ Now you'll see this in your terminal:
 ![deploy on ovm](./assets/deploy-ovm.png)
 
 And uh... yeah.
-That's pretty much it. 
+That's pretty much it.
 Contracts deployed!
 Tutorial complete.
 Hopefully now you know the basics of working with Optimistic Ethereum.

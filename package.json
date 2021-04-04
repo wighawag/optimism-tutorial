@@ -4,18 +4,22 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf ./cache-ovm ./cache ./artifacts-ovm ./artifacts ./deployments"
+    "clean": "rimraf ./cache-ovm ./cache ./artifacts-ovm ./artifacts ./deployments",
+    "localhost:run": "cross-env HARDHAT_NETWORK=localhost node",
+    "optimism:run": "cross-env HARDHAT_NETWORK=optimism node"
   },
   "devDependencies": {
+    "@eth-optimism/contracts": "^0.1.11",
     "@eth-optimism/dev": "^1.1.1",
     "@eth-optimism/plugins": "^1.0.0-alpha.2",
     "@nomiclabs/hardhat-ethers": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.2.0",
+    "cross-env": "^7.0.3",
     "ethereum-waffle": "^3.2.1",
     "ethers": "^5.0.24",
     "hardhat": "^2.0.7",
-    "hardhat-deploy": "^0.7.0-beta.49",
+    "hardhat-deploy": "^0.7.0-beta.58",
     "mocha": "^8.2.1"
   }
 }
